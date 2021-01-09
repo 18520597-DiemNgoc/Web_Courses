@@ -1,0 +1,2848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/grid.css">
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/queries.css">
+    
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        window.onload = function(){
+            openCity(event, "Home")
+        }
+        function openCity(evt, Name) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(Name).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <title>CSS Course</title>
+</head>
+<body>
+<header id="home">
+        <nav>
+            <a href="#">
+                <img class="logo" src="./resources/images/abalogo.png"  alt="logo">
+            </a>
+            <!-- unorder-list -->
+            <ul class="main-nav">
+                <!-- list-item -->
+                <li ><a href="#" style="color: #e67e22;">HOME</a></li>
+                <div class="dropdown">
+                    <li ><a style="color: #e67e22;">SERVICES</a></li>
+                    <div class="dropdown-content">
+                        <a href="#" style="color:white;">IT Services </a>
+                        <a href="Affiliate.html" style="color:white;">Affiliate</a>
+                      </div>
+                    </div>
+                        <li ><a style="color: #e67e22;" href="Courses.html">COURSES</a></li>
+                <li><a href="#" style="color: #e67e22;">POLICIES</a></li>
+                <li class="slide"></li>
+                <div class="btn" style="text-align: center;" ><li> <a href="#">LOGIN</a></li></div>
+            </ul>
+            <i class="fas fa-bars mobile-nav-icon"></i>
+        </nav>
+    </header>
+    <section>
+        <div  style="margin-top: 4em;"></div>
+        <div class="direct"  style="height: 1.5em;background-color: aliceblue;"><a class="nav-link"  href="#">Home</a> <span> / Css Course</span>  </div>
+           </section>
+        
+        <section class = "mainSection" id="about">
+            <marquee class = "blur">Cascading Style Sheets (CSS)</marquee>
+            <aside class="left">
+                <h3>CSS Tutorial</h3>
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">CSS Home</button>
+                    <button class="tablinks" onclick="openCity(event, 'Forms')">CSS Forms</button>
+                    <button class="tablinks" onclick="openCity(event, 'Colors')">CSS Colors</button>
+                    <button class="tablinks" onclick="openCity(event, 'Backgrounds')">CSS Backgrounds</button>
+                    <button class="tablinks" onclick="openCity(event, 'HowTo')">CSS How To</button>
+                    <button class="tablinks" onclick="openCity(event, 'Tables')">CSS Tables</button>
+                    <button class="tablinks" onclick="openCity(event, 'List')">CSS List</button>
+                    <button class="tablinks" onclick="openCity(event, 'Displays')">CSS Displays/button</button>
+                    <button class="tablinks" onclick="openCity(event, 'UserInterface')">CSS User Interface</button>
+                    <button class="tablinks" onclick="openCity(event, 'WebsiteLayout')">CSS Website Layout</button>
+                    <button class="tablinks" onclick="openCity(event, 'Summary')">CSS Summary</button
+                  </div>
+               
+            </aside>
+            <aside class="right">
+                <div id="Home" class="tabcontent">
+                    <div class="info">
+                        <div>
+                            <b class="test">Cascading Style Sheets (CSS)</b> controls the presentation aspect of the site and allows your site to have its own unique look. It does this by maintaining style sheets which sit on top of other style rules and are triggered based on other inputs, such as device screen size and resolution.
+                        </div>
+                        <br>
+                        <div>
+                        <video width="80%" height="350px" controls>
+                            <source src="./resources/video/What is CSS-.mp4" type="video/mp4">
+                         </video>
+                         <p style="font-size: small;">
+                            Source: 
+                            <a href="https://www.youtube.com/watch?v=R_FOJrxb-vI&ab_channel=websmarttv" target="_blank"><i style="color: blue;">Here</i></a>.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                   
+                <div id="Forms" class="tabcontent">
+                    <div class="info">
+                        <h4 style="font-size: 25px; color:black">CSS Forms</h4>
+                        <br>
+                        <p>The look of an HTML form can be greatly improved with CSS:</p>
+                        </br>
+                        <img src="resources/images/examCSSForm.png">
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4 style="font-size: 25px; color:black">Styling Input Fields</h4>
+                        <br>
+                        <p>Use the <span style="color: darkred ; background-color:#ddd">width</span> property to determine the width of the input field:</p>
+                        <br>
+                        <img src="./resources/images/examCSSInput.png">
+                        <br>
+                        <p>Example</p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                input
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    width
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        100%
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span> 
+                            </span>
+                        </div>
+                        <br>
+                        <p>The example above applies to all <span style="color: darkred ; background-color:#ddd">&lt;input&gt;</span> elements. If you only want to style a specific input type, you can use attribute selectors:</p>
+                        <p style="margin-left: 20px">
+                                <p>- <span style="color: darkred ; background-color:#ddd">input[type=text]</span> - will only select text fields</p>
+                                <p>- <span style="color: darkred ; background-color:#ddd">input[type=password]</span> - will only select password fields</p>
+                                <p>- etc..</p>
+                        </p>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4 style="font-size: 25px; color:black">Padded Inputs</h4>
+                        <br>
+                        <p>Use the <span style="color: darkred ; background-color:#ddd">padding</span> property to add space inside the text field.</p>
+                        <br>
+                        <p><b>Tip:</b> When you have many inputs after each other, you might also want to add some <span style="color: darkred ; background-color:#ddd">margin</span>, to add more space outside of them:</p>
+                        <br>
+                        <img src="resources/images/examCSSPaddedInput.png">
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                            input[type=text]
+                            <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp; 
+                                    width
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        100%
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    padding
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        12px 20px
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    margin
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        8px 0
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    box-sizing
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        border-box
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span> 
+                            </span>
+                        </div>
+                        <br>
+                        <p style="background: #ffdab9;"><b>Note: </b>that we have set the <span style="color: darkred ; background-color:#ddd">box-sizing</span> property to <span style="color: darkred ; background-color:#ddd">border-box</span>. This makes sure that the padding and eventually borders are included in the total width and height of the elements.</p>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4 style="font-size: 25px; color:black">Bordered Inputs</h4>
+                        <br>
+                        <p>Use the <span style="color: darkred ; background-color:#ddd">border</span> property to change the border size and color, and use the <span style="color: darkred ; background-color:#ddd">border-radius</span> property to add rounded corners:</p>
+                        <br>
+                        <img src="resources/images/examCSSBoderInput.png">
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                            input[type=text]
+                            <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    border
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span>
+                                        2px solid red
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    border-radius
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        4px
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span> 
+                            </span>
+                        </div>
+                        <br>
+                        <p>If you only want a bottom border, use the border-bottom property:</p>
+                        <br>
+                        <img src="/resources/images/examCSSbolder1.png">
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                            input[type=text]
+                            <span style="color:black">{</span>
+                                <span  style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    border
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        none
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    border-bottom
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        2px solid red
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span> 
+                            </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4 style="font-size: 25px; color:black">Colored Inputs</h4>
+                        <br>
+                        <p>Use the <span style="color: darkred ; background-color:#ddd">background</span> property to add a background color to the input, and the <span style="color: darkred ; background-color:#ddd">color</span>property to change the text color:</p>
+                        <br>
+                        <img src="resources/images/examCSSColorForm.png">
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                            input[type=text]
+                            <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        #3CBC8D
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                     color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        white
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span> 
+                            </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4 style="font-size: 25px; color:black">Focused Inputs</h4>
+                        <br>
+                        <p>By default, some browsers will add a blue outline around the input when it gets focus (clicked on). You can remove this behavior by adding <span style="color: darkred ; background-color:#ddd"> outline: none;</span> to the input.</p>
+                        <p>Use the <span style="color: darkred ; background-color:#ddd">:focus</span> selector to do something with the input field when it gets focus:</p>
+                        <br>
+                        <img src="resources/images/examCSSFocusForm.png">
+                        <br>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4 style="font-size: 25px; color:black">Input with icon/image</h4>
+                        <br>
+                        <p>If you want an icon inside the input, use the <span style="color: darkred ; background-color:#ddd">background-image</span> property and position it with the <span style="color: darkred ; background-color:#ddd">background-position</span> property. Also notice that we add a large left padding to reserve the space of the icon:</p>
+                        <br>
+                        <img src="./resources/images/searchicon.png">
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                            input[type=text]
+                            <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp; 
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        white
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    background-image
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span>
+                                        url('searchicon.png')
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    background-position
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        10px 10px
+                                        <span style="color:black">;</span>
+                                    </span> 
+                                    <br>
+                                    &nbsp; 
+                                    background-repeat
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        no-repeat
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    padding-left
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        40px
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                 </span>
+                                 <span style="color:black">}</span> 
+                            </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4 style="font-size: 25px; color:black">Animated Search Input</h4>
+                        <br>
+                        <p>In this example we use the CSS <span style="color: darkred ; background-color:#ddd">transition</span> property to animate the width of the search input when it gets focus.</p>
+                        <br>
+                        <img src="resources/images/examAnimated.png">
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                input[type=text] 
+                                <span style="color:black">{</span>
+                                    <span style="color:red">
+                                        <br>
+                                        &nbsp; 
+                                        transition
+                                        <span style="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            width 0.4s ease-in-out
+                                            <span style="color:black">;</span>
+                                        </span>
+                                        <br>
+                                    </span>
+                                <span style="color:black">}</span>
+                                <br>
+                                <br>
+                                input[type=text]:focus 
+                                <span style="color:black">{</span>
+                                    <span style="color:red">
+                                        <br>
+                                        &nbsp; 
+                                        width
+                                        <span style="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            100%
+                                            <span style="color:black">;</span>
+                                       </span>
+                                        <br>
+                                    </span>
+                                    <span style="color:black">}</span> 
+                             </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4 style="font-size: 25px; color:black">Styling Select Menus</h4>
+                        <br>
+                        <img src="resources/images/examSeclectMenu.png">
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                            select
+                            <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp; 
+                                    width
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        100%
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    padding
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        16px 20px
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    border
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        none
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    border-radius
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        4px
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp;
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        white
+                                        <span  style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span> 
+                            </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4 style="font-size: 25px; color:black">Styling Input Buttons</h4>
+                        <br>
+                        <img src="resources/images/examCSSButton.png">
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                input[type=button], input[type=submit], input[type=reset]
+                                <span style="color:black">{</span>
+                                    <span style="color:red">
+                                        <br>
+                                        &nbsp; 
+                                        background-color
+                                        <span style="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            #4CAF50
+                                            <span tyle="color:black">;</span>
+                                        </span>
+                                        <br>
+                                        &nbsp; 
+                                        border
+                                        <span style="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            none
+                                            <span style="color:black">;</span>
+                                        </span>
+                                        <br>
+                                        &nbsp; 
+                                        color
+                                        <span style="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            white
+                                            <span style="color:black">;</span>
+                                        </span>
+                                        <br>
+                                        &nbsp; 
+                                        padding
+                                        <span style="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            16px 32px
+                                            <span style="color:black">;</span>
+                                        </span>
+                                        <br>
+                                        &nbsp; 
+                                        text-decoration
+                                        <span style="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            none
+                                            <span style="color:black">;</span>
+                                        </span>
+                                        <br>
+                                        &nbsp; 
+                                        margin
+                                        <span style="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            4px 2px
+                                            <span style="color:black">;</span>
+                                        </span>
+                                        <br>
+                                        &nbsp; 
+                                        cursor
+                                        <span style="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            pointer
+                                            <span style="color:black">;</span>
+                                        </span>
+                                        <br>
+                                    </span>
+                                    <span style="color:black">}</span>
+                                    <br>
+                                    <br>
+                            </span>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div id="Colors" class="tabcontent">
+                    <div class="info">
+                        <h4 style="font-size: 25px; color:black">CSS Colors</h4> 
+                        <br>
+                        <h4 style="font-size: 25px; color: black">RGBA Colors</h4>
+                        <br>
+                        <p>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.</p>
+                        <br>
+                        <p>An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+                        <br>
+                        <img src="./resources/images/RGBA.png">
+                        <br>
+                        <p>The following example defines different RGBA colors:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                #p1 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        rgba(255, 0, 0, 0.3)
+                                        <span style="color:black">;</span>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                                &nbsp; 
+                                <span style="color:green">
+                                    /* red with opacity */
+                                </span>
+                                <br>
+                                #p2 
+                                <span style="color:black">{</span>
+                                <span tyle="color:red">
+                                    background-color
+                                    <span style="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            rgba(0, 255, 0, 0.3)
+                                            <span style="color:black">;</span>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                                &nbsp;
+                                &nbsp;
+                                <span style="color:green">
+                                    /* green with opacity */
+                                </span>
+                                <br>
+                                #p3 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        rgba(0, 0, 255, 0.3)
+                                        <span style="color:black">;</span>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                                &nbsp;
+                                &nbsp;
+                                <span style="color:green">
+                                    /* blue with opacity */
+                                </span>
+                            </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4 style="font-size: 25px; color:black">HSL Colors</h4>
+                        <br>
+                        <p>HSL stands for Hue, Saturation and Lightness.</p>
+                        <br>
+                        <p>An HSL color value is specified with: hsl(hue, saturation, lightness).</p>
+                        <p style="margin-left: 20px">
+                            <p> 1. Hue is a degree on the color wheel (from 0 to 360):</p>
+                            <p style="margin-left:20px">    - 0 (or 360) is red</p>
+                            <p style="margin-left:20px">    - 120 is green</p>
+                            <p style="margin-left:20px">    - 240 is blue</p>
+                            <p> 2. Saturation is a percentage value: 100% is the full color.</p>
+                            <p> 3. Lightness is also a percentage; 0% is dark (black) and 100% is white.</p>
+                        </p>
+                        <br>
+                        <img src="./resources/images/hsl.png">
+                        <br>
+                        <p>The following example defines different HSL colors:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                #p1 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        hsl(120, 100%, 50%)
+                                        <span style="color:black">;</span>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                                &nbsp; 
+                                <span style="color:green">/* green */</span>
+                                <br>
+                                #p2 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        hsl(120, 100%, 75%)
+                                        <span style="color:black">;</span>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                                &nbsp;
+                                &nbsp;
+                                <span style="color:green">/* light green */</span>
+                                <br>
+                                #p3 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        hsl(120, 100%, 25%)
+                                        <span style="color:black">;</span>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                                &nbsp;
+                                &nbsp;
+                                <span style="color:green">/* dark green */</span>
+                                <br>
+                                #p4 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        hsl(120, 60%, 70%)
+                                        <span style="color:black">;</span>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                <span style="color:green">/* pastel green */</span>
+                             </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4 style="font-size: 25px; color:black">HSLA Colors</h4>
+                        <br>
+                        <p>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.</p>
+                        <br>
+                        <p>An HSLA color value is specified with: hsla(hue, saturation, lightness, alpha), where the alpha parameter defines the opacity. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+                        <br>
+                        <img src="./resources/images/hsla.png">
+                        <br>
+                        <p>The following example defines different HSLA colors:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                #p1 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        hsla(120, 100%, 50%, 0.3)
+                                        <span style="color:black">;</span>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                                &nbsp; 
+                                <span style="color:green">/* green with opacity */</span>
+                                <br>
+                                #p2 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        hsla(120, 100%, 75%, 0.3)
+                                        <span style="color:black">;</span>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                                &nbsp;
+                                &nbsp;
+                                <span style="color:green">/* light green with opacity */</span>
+                                <br>
+                                #p3 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        hsla(120, 100%, 25%, 0.3)
+                                        <span style="color:black">;</span>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                                &nbsp;
+                                &nbsp;
+                                <span style="color:green">/* dark green with opacity */</span>
+                                <br>
+                                #p4 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        hsla(120, 60%, 70%, 0.3)
+                                        <span style="color:black">;</span>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                <span style="color:green">/*pastel green with opacity */</span>
+                             </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4 style="font-size: 25px; color:black">Opacity</h4>
+                        <br>
+                        <p>The CSS <span style="color:darkred; background-color:#ddd">opacity</span> property sets the opacity for the whole element (both background color and text will be opaque/transparent).</p>
+                        <br>
+                        <p>The <span style="color:darkred; background-color:#ddd">opacity</span> property value must be a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+                        <br>
+                        <img src="./resources/images/opacity.png">
+                        <br>
+                        <p>Notice that the text above will also be transparent/opaque!</p>
+                        <br>
+                        <p>The following example shows different elements with opacity:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                #p1 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        rgb(255,0,0)
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    opacity
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        0.6
+                                        <span style="color:black">;</span>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                                &nbsp; 
+                                <span style="color:green">/* red with opacity */</span>
+                                <br>
+                                #p2 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        rgb(0,255,0)
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    opacity
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        0.6
+                                        <span style="color:black">;</span>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                                &nbsp;
+                                &nbsp;
+                                <span style="color:green">/* green with opacity */</span>
+                                <br>
+                                #p3 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        rgb(0,0,255)
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    opacity
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        0.6
+                                        <span style="color:black">;</span>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                                &nbsp;
+                                &nbsp;
+                                <span style="color:green">/* blue with opacity */</span>
+                                <br>
+                             </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Backgrounds" class="tabcontent">
+                    <div class="info">
+                        <h4><b style="font-size: 25px; color:black">CSS Backgrounds</b></h4>
+                        <br>
+                        <img src="resources/images/CSSBackground.png">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">CSS background-color</b></h4>
+                        <br>
+                        <p>The <span style="color: darkred ; background-color:#ddd">background-color</span> property specifies the background color of an element.</p>
+                        <br>
+                        <p>Example: </p>
+                        <p>The background color of a page is set like this:</p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                body 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        lightblue
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                             </span>
+                        </div>
+                        <br>
+                        <p>With CSS, a color is most often specified by:</p>
+                        <p style="margin-left: 15px;">
+                            <p style="margin-left: 15px">   -   a valid color name - like "red"</p>
+                            <p style="margin-left: 15px">   -   a HEX value - like "#ff0000"</p>
+                            <p style="margin-left: 15px">   -   an RGB value - like "rgb(255,0,0)"</p>
+                        </p>
+                        <br>
+                        <p>Look at CSS Color Values for a complete list of possible color values.</p>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Other Elements</b></h4>
+                        <br>
+                        <p>You can set the background color for any HTML elements:</p>
+                        <br>
+                        <p>Example: </p>
+                        <p>Here, the <span style="color: darkred ; background-color:#ddd">&lt;h1&gt;</span>, <span style="color: darkred ; background-color:#ddd">&lt;p&gt;</span>, and <span style="color: darkred ; background-color:#ddd">&lt;div&gt;</span> elements will have different background colors: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                h1 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        green
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                                <br>
+                                <br>
+                                div 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        lightblue
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                                <br>
+                                <br>
+                                p 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        yellow
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span> 
+                            </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Opacity / Transparency</b></h4>
+                        <br>
+                        <p>The <span style="color:darkred; background-color: #ddd">opacity</span> property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:</p>
+                        <br>
+                        <img src="resources/images/CSSOpacity.png">
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                div 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp; 
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        green
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    opacity
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span>
+                                         0.3
+                                         <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span> 
+                            </span>
+                        </div>
+                        <br>
+                        <p style="background: #ffdab9;"><b>Note: </b>When using the <span style="color: darkred; background-color: #ddd">opacity</span> property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read.</p>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Transparency using RGBA</b></h4>
+                        <br>
+                        <p>If you do not want to apply opacity to child elements, like in our example above, use <b>RGBA</b> color values. The following example sets the opacity for the background color and not the text:</p>
+                        <br>
+                        <img src="resources/images/CSSOpacityRGBA.png">
+                        <br>
+                        <p>You learned from our CSS Colors Chapter, that you can use RGB as a color value. In addition to RGB, you can use an RGB color value with an <b>alpha</b> channel (RGB<b>A</b>) - which specifies the opacity for a color.</p>
+                        <br>
+                        <p>An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+                        <br>
+                        <p><b>Tip: </b>You will learn more about RGBA Colors in our CSS Colors Chapter.</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                div 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp; 
+                                    background
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        rgba(0, 128, 0, 0.3) 
+                                        <span style="color:green">/* Green background with 30% opacity */</span>
+                                        <br>
+                                    </span>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div id="HowTo" class="tabcontent">
+                    <div class="info">
+                        <h4><b style="font-size: 25px; color:black">How To Add CSS</b></h4>
+                        <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.</p>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Three Ways to Insert CSS</b></h4>
+                        <br>
+                        <p>There are three ways of inserting a style sheet:</p>
+                        <br>
+                        <p style="margin-left: 15px">
+                            <p style="margin-left: 15px"> -   External CSS</p>
+                            <p style="margin-left: 15px"> -   Internal CSS</p>
+                            <p style="margin-left: 15px"> -   Inline CSS</p>
+                        </p>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">External CSS</b></h4>
+                        <br>
+                        <p>With an external style sheet, you can change the look of an entire website by changing just one file!</p>
+                        <br>
+                        <p>Each HTML page must include a reference to the external style sheet file inside the <b><</b><b>link></b> element, inside the head section.</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate htmlHigh">
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                !DOCTYPE
+                                <span style="color:red"> html</span>
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                html
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                head
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                link
+                                <span style="color:red"> 
+                                    rel
+                                    <span style="color:mediumblue">="stylesheet"</span> 
+                                    href
+                                    <span style="color:mediumblue">="mystyle.css"</span>
+                                </span>
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /head
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                body
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                h1
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            This is a heading
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /h1
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                p
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            This is a paragraph.
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /p
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /body
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /html
+                                <span style="color:mediumblue">&gt;</span>
+                            </span> 
+                        </div>
+                        <br>
+                        <p>An external style sheet can be written in any text editor, and must be saved with a .css extension.</p>
+                        <br>
+                        <p>he external .css file should not contain any HTML tags.</p>
+                        <br>
+                        <p>Here is how the "mystyle.css" file looks:</p>
+                        <br>
+                        <p>mystyle.css</p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                body
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        lightblue
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                                <br>
+                                <br>
+                                h1 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        navy
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    margin-left
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        20px
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span> 
+                            </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Internal CSS</b></h4>
+                        <br>
+                        <p>An internal style sheet may be used if one single HTML page has a unique style.</p>
+                        <br>
+                        <p>The internal style is defined inside the <span style="color: darkred; background-color:#ddd">&lt;style&gt;</span> element, inside the head section.</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate htmlHigh">
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                !DOCTYPE
+                                <span style="color:red"> html</span>
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                html
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                head
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                style
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <span style="color:brown">
+                                <br>
+                                body 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp; 
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        linen
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                                <br>
+                                <br>
+                                h1
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp; 
+                                    color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        maroon
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    margin-left
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        40px
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span> 
+                                <br>
+                            </span>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /style
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /head
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                body
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                h1
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            This is a heading
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /h1
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                p
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            This is a paragraph.
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /p
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /body
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /html
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Inline CSS</b></h4>
+                        <br>
+                        <p>An inline style may be used to apply a unique style for a single element.</p>
+                        <br>
+                        <p>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
+                        <br>
+                        <p>Example: </p>
+                        <p>Inline styles are defined within the "style" attribute of the relevant element:</p>
+                        <div class="w3-code notranslate htmlHigh">
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                !DOCTYPE
+                                <span style="color:red"> html</span>
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                html
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                body
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                h1
+                                <span style="color:red"> 
+                                    style
+                                    <span style="color:mediumblue">="color:blue;text-align:center;"</span>
+                                </span>
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            This is a heading
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /h1
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                p
+                                <span style="color:red"> 
+                                    style
+                                    <span style="color:mediumblue">="color:red;"</span>
+                                </span>
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            This is a paragraph.
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /p
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /body
+                                <span style="color:mediumblue">&gt;</span>
+                            </span>
+                            <br>
+                            <span style="color:brown">
+                                <span style="color:mediumblue">&lt;</span>
+                                /html
+                                <span style="color:mediumblue">&gt;</span>
+                            </span> 
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div id="Tables" class="tabcontent">
+                    <div class="info">
+                        <h4><b style="font-size: 25px; color:black">CSS Tables</b></h4>
+                        <br>
+                        <p>The look of an HTML table can be greatly improved with CSS:</p>
+                        <table class="w3-table-all">
+                            <tbody><tr style="background-color: green; color:white">
+                              <th>Company</th>
+                              <th>Contact</th>
+                              <th>Country</th>
+                            </tr>
+                            <tr>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Maria Anders</td>
+                            <td>Germany</td>
+                            </tr>
+                            <tr>
+                            <td>Berglunds snabbköp</td>
+                            <td>Christina Berglund</td>
+                            <td>Sweden</td>
+                            </tr>
+                            <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                            </tr>
+                            <tr>
+                            <td>Ernst Handel</td>
+                            <td>Roland Mendel</td>
+                            <td>Austria</td>
+                            </tr>
+                            <tr>
+                            <td>Island Trading</td>
+                            <td>Helen Bennett</td>
+                            <td>UK</td>
+                            </tr>
+                            <tr>
+                            <td>Königlich Essen</td>
+                            <td>Philip Cramer</td>
+                            <td>Germany</td>
+                            </tr>
+                            <tr>
+                            <td>Laughing Bacchus Winecellars</td>
+                            <td>Yoshi Tannamuri</td>
+                            <td>Canada</td>
+                            </tr>
+                            <tr>
+                            <td>Magazzini Alimentari Riuniti</td>
+                            <td>Giovanni Rovelli</td>
+                            <td>Italy</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Table Borders</b></h4>
+                        <br>
+                        <p>To specify table borders in CSS, use the <span style="color:darkred; background-color:#ddd">border </span>property.</p>
+                        <br>
+                        <p>The example below specifies a black border for <span style="color:darkred; background-color:#ddd">&lt;table&gt;</span>, <span style="color:darkred; background-color:#ddd">&lt;th&gt;</span>, and <span style="color:darkred; background-color:#ddd">&lt;td&gt;</span> elements:</p>
+                        <br>
+                        <img src="resources/images/CSSTableBorder.png">
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                table, th, td 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    border
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        1px solid black
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Full-Width Table</b></h4>
+                        <br>
+                        <p>The table above might seem small in some cases. If you need a table that should span the entire screen (full-width), add <span style="color:darkred; background-color:#ddd">width: 100% </span>to the <span>&lt;table&gt;</span> element:</p>
+                        <br>
+                        <img src="resources/images/CSSFullWidth.png">
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                table 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    border
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        1px solid black
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                        <p style="background: #ffdab9;">
+                            <h4>Double Borders </h4>
+                            <br>
+                            Notice that the table in the examples above have double borders. This is because both the table and the <b><</b><b>th></b> and <b><</b><b>td></b> elements have separate borders.
+                            <br>
+                            To remove double borders, take a look at the example below.
+                            <br>
+                        </p>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Collapse Table Borders</b></h4>
+                        <br>
+                        <p>The <span style="color:darkred; background-color:#ddd">border-collapse</span> property sets whether the table borders should be collapsed into a single border:</p>
+                        <br>
+                        <img src="./resources/images/CSSCollapseBoderTable.png">
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                table 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    border-collapse
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        collapse
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                        <p>If you only want a border around the table, only specify the <span style="color: darkred ;">border</span> property for <span style="color:darkred;">&lt;table&gt;</span>:</p>
+                        <br>
+                        <img src="resources/images/CSSonlyBorder.png">
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                table 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    border
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        1px solid black
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="List" class="tabcontent">
+                   <div class="info">
+                    <h4><b style="font-size: 25px; color:black">CSS Lists</b></h4>
+                    <br>
+                    <img src="resources/images/CSSList.png">
+                    <br>
+                    <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                    <br>
+                    <h4><b style="font-size: 25px; color:black">HTML Lists and CSS List Properties</b></h4>
+                    <br>
+                    <p>In HTML, there are two main types of lists:</p>
+                    <p style="margin-left: 15px">
+                        <p style="margin-left: 15px">1.  unordered lists (<span>&lt;ul&gt;</span>) - the list items are marked with bullets</p>
+                        <p style="margin-left: 15px">2. ordered lists (<span>&lt;ol&gt;</span>) - the list items are marked with numbers or letters</p>
+                    </p>
+                    <p>The CSS list properties allow you to:</p>
+                    <p style="margin-left: 15px">
+                        <p style="margin-left: 15px">   - Set different list item markers for ordered lists</p>
+                        <p style="margin-left: 15px">   - Set different list item markers for unordered lists</p>
+                        <p style="margin-left: 15px">   - Set an image as the list item marker</p>
+                        <p style="margin-left: 15px">   - Add background colors to lists and list items</p>
+                        <br>
+                    </p>
+                    <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                    <br>
+                    <h4><b style="font-size: 25px; color:black">Different List Item Markers</b></h4>
+                    <br>
+                    <p>The <span style="color: darkred; background-color:#ddd">list-style-type </span>property specifies the type of list item marker.</p>
+                    <br>
+                    <p>The following example shows some of the available list item markers:</p>
+                    <br>
+                    <p>Example: </p>
+                    <div class="w3-code notranslate cssHigh">
+                        <span style="color:brown">
+                            ul.a 
+                            <span style="color:black">{</span>
+                            <span style="color:red">
+                                <br>
+                                &nbsp;
+                                &nbsp;
+                                list-style-type
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    circle
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                            </span>
+                            <span style="color:black">}</span>
+                            <br>
+                            <br>
+                            ul.b 
+                            <span style="color:black">{</span>
+                            <span style="color:red">
+                                <br>
+                                &nbsp; 
+                                list-style-type
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    square
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                            </span>
+                            <span style="color:black">}</span>
+                            <br>
+                            <br>
+                            ol.c 
+                            <span style="color:black">{</span>
+                            <span style="color:red">
+                                <br>
+                                &nbsp; 
+                                list-style-type
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    upper-roman
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                            </span>
+                            <span style="color:black">}</span>
+                            <br>
+                            <br>
+                            ol.d 
+                            <span style="color:black">{</span>
+                            <span style="color:red">
+                                <br>
+                                &nbsp; 
+                                list-style-type
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    lower-alpha
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                            </span>
+                            <span style="color:black">}</span> 
+                        </span>
+                    </div>
+                    <br>
+                    <p>Note: Some of the values are for unordered lists, and some for ordered lists.</p>
+                    <br>
+                    <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                    <br>
+                    <h4><b style="font-size: 25px; color:black">An Image as The List Item Marker</b></h4>
+                    <br>
+                    <p>The <span style="color: darkred; background-color:#ddd">list-style-image </span>property specifies an image as the list item marker:</p>
+                    <br>
+                    <p>Example: </p>
+                    <div class="w3-code notranslate cssHigh">
+                        <span style="color:brown">
+                            ul
+                            <span style="color:black">{</span>
+                            <span style="color:red">
+                                <br>
+                                &nbsp;
+                                &nbsp;
+                                list-style-image
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    url('sqpurple.gif')
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                            </span>
+                            <span style="color:black">}</span>
+                        </span>
+                    </div>
+                    <br>
+                    <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                    <br>
+                    <h4><b style="font-size: 25px; color:black">Position The List Item Markers</b></h4>
+                    <br>
+                    <p>The <span style="color: darkred; background-color:#ddd">list-style-position </span>property specifies the position of the list-item markers (bullet points).</p>
+                    <br>
+                    <p>"list-style-position: outside;" means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically.</p>
+                    <br>
+                    <img src="resources/images/CSSListOutside.png">
+                    <br>
+                    <p>"list-style-position: inside;" means that the bullet points will be inside the list item. As it is part of the list item, it will be part of the text and push the text at the start:</p>
+                    <br>
+                    <img src="resources/images/CSSListInside.png">
+                    <br>
+                    <p>Example: </p>
+                    <div class="w3-code notranslate cssHigh">
+                        <span style="color:brown">
+                            ul.a
+                            <span style="color:black">{</span>
+                            <span style="color:red">
+                                <br>
+                                &nbsp;
+                                &nbsp;
+                                list-style-position
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    outside
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                            </span>
+                            <span style="color:black">}</span>
+                        </span>
+                        <br>
+                        <span style="color:brown">
+                            ul.b
+                            <span style="color:black">{</span>
+                            <span style="color:red">
+                                <br>
+                                &nbsp;
+                                &nbsp;
+                                list-style-position
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    inside
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                            </span>
+                            <span style="color:black">}</span>
+                        </span>
+                    </div>
+                    <br>
+                    <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                    <br>
+                    <h4><b style="font-size: 25px; color:black">Remove Default Settings</b></h4>
+                    <br>
+                    <p>The <span style="color: darkred; background-color:#ddd">list-style-type: none </span>roperty can also be used to remove the markers/bullets. Note that the list also has default margin and padding. To remove this, add <span style="color: darkred; background-color:#ddd">margin: 0 </span <span style="color: darkred; background-color:#ddd">padding: 0 </span>to &lt;ul&gt; or &lt;ol&gt;:</p>
+                    <br>
+                    <p>Example: </p>
+                    <div class="w3-code notranslate cssHigh">
+                        <span style="color:brown">
+                            ul
+                            <span style="color:black">{</span>
+                            <span style="color:red">
+                                <br>
+                                &nbsp;
+                                &nbsp;
+                                list-style-type
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    none
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                                &nbsp;
+                                &nbsp;
+                                margin
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    0
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                                &nbsp;
+                                &nbsp;
+                                padding
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    0
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                            </span>
+                            <span style="color:black">}</span>
+                        </span>
+                    </div>
+                    <br>
+                    <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                    <br>
+                    <h4><b style="font-size: 25px; color:black">All CSS List Properties</b></h4>
+                    <br>
+                    <table class="w3-table-all">
+                        <tbody>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>list-style</td>
+                                    <td>Sets all the properties for a list in one declaration</td>
+                                </tr>
+                            <tr>
+                                <td>list-style-image</td>
+                                <td>Specifies an image as the list-item marker</td>
+                            </tr>
+                            <tr>
+                                <td>list-style-position</td>
+                                <td>Specifies the position of the list-item markers (bullet points)</td>
+                            </tr>
+                            <tr>
+                                <td>list-style-type</td>
+                                <td>Specifies the type of list-item marker</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                   </div> 
+                </div>
+
+                <div id="Displays" class="tabcontent">
+                    <div class="info">
+                        <h4><b style="font-size: 25px; color:black">CSS Layout - The display Property</b></h4>
+                        <br>
+                        <p>The <span style="color: darkred ; background-color:#ddd">display</span> property is the most important CSS property for controlling layout.</p>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Block-level Elements</b></h4>
+                        <br>
+                        <p>A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).</p>
+                        <br>
+                        <img src="resources/images/CSSBlock-Level.png">
+                        <br>
+                        <p>Examples of block-level elements:</p>
+                        <p style="margin-left: 15px">
+                            <p style="margin-left: 15px">   -  &lt;div&gt;</p>
+                            <p style="margin-left: 15px">   -  &lt;h1&gt; - &lt;h6&gt;</p>
+                            <p style="margin-left: 15px">   -  &lt;p&gt;</p>
+                            <p style="margin-left: 15px">   -  &lt;form&gt;</p>
+                            <p style="margin-left: 15px">   -  &lt;header&gt;</p>
+                            <p style="margin-left: 15px">   -  &lt;footer&gt;</p>
+                            <p style="margin-left: 15px">   -  &lt;section&gt;</p>
+                        </p>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Inline Elements</b></h4>
+                        <br>
+                        <p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
+                        <br>
+                        <p>This is <span style="border-width:3px;border-style:solid; border-color: green">an inline &lt;span&gt; element inside</span> a paragraph.</p>
+                        <br>
+                        <p>Examples of inline elements:</p>
+                        <p style="margin-left: 15px">
+                            <p style="margin-left: 15px">   -  &lt;span&gt;</p>
+                            <p style="margin-left: 15px">   -  &lt;a&gt;</p>
+                            <p style="margin-left: 15px">   -  &lt;img&gt;</p>
+                        </p>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Display: none;</b></h4>
+                        <br>
+                        <p><span style="color:darkred; background-color:#ddd">Display: none; </span>is commonly used with JavaScript to hide and show elements without deleting and recreating them. Take a look at our last example on this page if you want to know how this can be achieved.</p>
+                        <br>
+                        <p>The <span style="color:darkred; background-color:#ddd">&lt;script&gt; </span>element uses <span style="color:darkred; background-color:#ddd">Display: none; </span> as default. </p>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange; background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Override The Default Display Value</b></h4>
+                        <br>
+                        <p>As mentioned, every element has a default display value. However, you can override this.</p>
+                        <br>
+                        <p>Changing an inline element to a block element, or vice versa, can be useful for making the page look a specific way, and still follow the web standards.</p>
+                        <br>
+                        <p>A common example is making inline &lt;li&gt; elements for horizontal menus:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                li
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    display
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        inline
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                        <p style="background: #ffdab9;"><b>Note: </b>Setting the display property of an element only changes <b>how the element is displayed</b>, NOT what kind of element it is. So, an inline element with <span style="color:darkred; background-color:#ddd">display: block;</span> is not allowed to have other block elements inside it.</p>
+                        <br>
+                        <p>The following example displays &lt;span&gt; elements as block elements:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                span
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    display
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        block
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                        <p>The following example displays &lt;a&gt; elements as block elements:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                a
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    display
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        block
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange; background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Hide an Element - display:none or visibility:hidden?</b></h4>
+                        <br>
+                        <p>Hiding an element can be done by setting the <span style="color: darkred; background-color:#ddd">display</span> property to <span style="color: darkred; background-color:#ddd">none</span>. The element will be hidden, and the page will be displayed as if the element is not there:</p>
+                        <br>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                h1.hidden
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    display
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        none
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                        <p><span style="color: darkred; background-color: #ddd">visibility:hidden;</span> also hides an element.</p>
+                        <br>
+                        <p>However, the element will still take up the same space as before. The element will be hidden, but still affect the layout:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                h1.hidden
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    visibility
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        hidden
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+
+                <div id="UserInterface" class="tabcontent">
+                    <div class="info">
+                        <h4><b style="font-size: 25px; color:black">CSS User Interface</b></h4>
+                        <br>
+                        <p>In this chapter you will learn about the following CSS user interface properties:</p>
+                        <p style="margin-left: 15px">
+                            <p>   -   <span style="margin-left: 15px; color:darkred; background-color: #ddd">resize</span></p>
+                            <p>   -   <span style="margin-left: 15px; color:darkred; background-color: #ddd">outline-offset</span></p>
+                        </p>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Browser Support</b></h4>
+                        <br>
+                        <p>The numbers in the table specify the first browser version that fully supports the property.</p>
+                        <img src="resources/images/Browser Support.png" style="margin-left: 10px">
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">CSS Resizing</b></h4>
+                        <br>
+                        <p>The <span style="color: darkred; background-color:#ddd">resize</span> property specifies if (and how) an element should be resizable by the user.</p>
+                        <br>
+                        <div id="resize"><p>This div element is resizable by the user!</p>
+                            <p>To resize: Click and drag the bottom right corner of this div element.</p>
+                        </div>
+                        <br>
+                        <p>The following example lets the user resize only the width of a &lt;div&gt; element:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                div
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    resize
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        horizontal
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    overflow
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        auto
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                        <p>The following example lets the user resize only the height of a &lt;div&gt; element:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                div
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    resize
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        vertical
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    overflow
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        auto
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                        <p>The following example lets the user resize both the height and width of a &lt;div&gt; element:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                div
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    resize
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        both
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    overflow
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        auto
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                        <p>In many browsers, &lt;textarea&gt; is resizable by default. Here, we have used the resize property to disable the resizability:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                div
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    textarea
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        none
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">CSS Outline Offset</b></h4>
+                        <br>
+                        <p>The <span style="color: darkred ; background-color:#ddd">outline-offset</span> property adds space between an outline and the edge or border of an element.</p>
+                        <br>
+                        <div id="outlineoffset">This div has an outline 15px outside the border edge.</div>
+                        <br>
+                        <p>The following example uses the <span style="color:darkred; background-color:#ddd">outline-offset</span> property to add space between the border and the outline:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown">
+                                div.ex1 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp; 
+                                    margin
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        20px
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    border
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        1px solid black
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    outline
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        4px solid red
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    outline-offset
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        15px
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span> 
+                                <br>
+                                <br>
+                                div.ex2 
+                                <span style="color:black">{</span>
+                                    <span style="color:red">
+                                        <br>
+                                        &nbsp;
+                                        &nbsp;
+                                        margin
+                                        <span style="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            10px
+                                            <span style="color:black">;</span>
+                                        </span>
+                                        <br>
+                                        &nbsp;
+                                        &nbsp;
+                                        border
+                                        <span style="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            1px solid black
+                                            <span style="color:black">;</span>
+                                        </span>
+                                        <br>
+                                        &nbsp;
+                                        &nbsp;
+                                        outline
+                                        <span style="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            5px dashed blue
+                                            <span style="color:black">;</span>
+                                        </span>
+                                        <br>
+                                        &nbsp;
+                                        &nbsp;
+                                        outline-offset
+                                        <span style="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            5px
+                                            <span style="color:black">;</span>
+                                        </span>
+                                        <br>
+                                    </span>
+                                    <span style="color:black">}</span>  
+                                </span>
+                        </div>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">CSS User Interface Properties</b></h4>
+                        <br>
+                        <p>The following table lists all the user interface properties:</p>
+                        <br>
+                        <table class="w3-table-all notranslate">
+                            <tbody><tr>
+                              <th style="width:28%">Property</th>
+                              <th>Description</th>
+                            </tr>
+                           <tr>
+                             <td>outline-offset</td>
+                              <td>Adds space between an outline and the edge or border of an element</td>
+                            </tr>
+                           <tr>
+                             <td>resize</td>
+                              <td>Specifies whether or not an element is resizable by the user</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <br>
+                    </div>
+                </div>
+
+                <div id="WebsiteLayout" class="tabcontent">
+                    <div class="info">
+                        <h4><b style="font-size: 25px; color:black">Website Layout</b></h4>
+                        <br>
+                        <p>A website is often divided into headers, menus, content and a footer:</p>
+                        <br>
+                        <img src="resources/images/CSSLayout.png">
+                        <br>
+                        <p>There are tons of different layout designs to choose from. However, the structure above, is one of the most common, and we will take a closer look at it in this tutorial.</p>
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Header</b></h4>
+                        <br>
+                        <p>A header is usually located at the top of the website (or right below a top navigation menu). It often contains a logo or the website name:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown"> 
+                                .header 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp; 
+                                    background-color
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        #F1F1F1
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    text-align
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        center
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp;
+                                    padding
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        20px
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                        <img src="resources/images/CSSHeader.png">
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Navigation Bar</b></h4>
+                        <br>
+                        <p>A navigation bar contains a list of links to help visitors navigating through your website:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown"> 
+                                <span style="color:green">/* The navbar container */</span>
+                                <br>
+                                .topnav 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp; 
+                                    overflow
+                                    <span  style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        hidden
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    background-color
+                                    <span  style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        #333
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                                <br>
+                                <br>
+                                <span style="color:green">/* Navbar links */</span>
+                                <br>
+                                .topnav a 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    float
+                                    <span  style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        left
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    display
+                                    <span  style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        block
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    color
+                                    <span  style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        #f2f2f2
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    text-align
+                                    <span  style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        center
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    padding
+                                    <span  style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        14px 16px
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    text-decoration
+                                    <span  style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        none
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                                <br>
+                                <br>
+                                <span style="color:green">/* Links - change color on hover */</span>
+                                <br>
+                                .topnav a:hover 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp; 
+                                    background-color
+                                    <span  style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        #ddd
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp; 
+                                    color
+                                    <span  style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        black
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span> 
+                            </span>
+                        </div>
+                        <br>
+                        <p>Result: </p>
+                        <img src="resources/images/CSSLink.png">
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Content</b></h4>
+                        <br>
+                        <p>The layout in this section, often depends on the target users. The most common layout is one (or combining them) of the following:</p>
+                        <br>
+                        <p style="margin-left: 15px">
+                            <p>     -   <b>1-column</b> (often used for mobile browsers)</p>
+                            <p>     -   <b>2-column</b> (often used for tablets and laptops)</p>
+                            <p>     -   <b>3-column layout</b> (only used for desktops)</p>
+                        </p>
+                        <br>
+                        <img src="resources/images/CSSCol.png">
+                        <br>
+                        <p>We will create a 3-column layout, and change it to a 1-column layout on smaller screens:</p>
+                        <br>
+                        <p>Example</p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown"> 
+                                <span style="color:green">/* Create three equal columns that floats next to each other */</span>
+                                <br>
+                                .column 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                <br>
+                                &nbsp; 
+                                float
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    left
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                                &nbsp; 
+                                width
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    33.33%
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                            </span>
+                            <span style="color:black">}</span>
+                            <br>
+                            <br>
+                            <span style="color:green">/* Clear floats after the columns */</span>
+                            <br>
+                            .row:after 
+                            <span style="color:black">{</span>
+                            <span style="color:red">
+                                <br>
+                                &nbsp; 
+                                content
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    ""
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                                &nbsp; 
+                                display
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    table
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                                &nbsp; 
+                                clear
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    both
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                            </span>
+                            <span style="color:black">}</span>
+                            <br>
+                            <br>
+                            <span style="color:green">/* Responsive layout - makes the three columns stack on top of each other instead of next 
+                            to each other on smaller screens (600px wide or less) */</span>
+                            <br>
+                            @media screen and (max-width:   600px) 
+                            <span style="color:black">{</span>
+                            <span style="color:brown">
+                                <br>
+                                &nbsp;
+                                &nbsp;
+                                .column 
+                                <span style="color:black">
+                                    <span style="color:black">{</span>
+                                </span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    &nbsp; 
+                                    width
+                                    <span style="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        100%
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                </span>
+                                <span style="color:black">
+                                    <span style="color:black">}</span>
+                                </span>
+                                <br>
+                            </span>
+                            <span style="color:black">}</span>
+                        </span>
+                        </div>
+                        <br>
+                        <p>Result: </p>
+                        <img src="resources/images/3-column layout.png">
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Unequal Columns</b></h4>
+                        <br>
+                        <p>The main content is the biggest and the most important part of your site.</p>
+                        <br>
+                        <p>It is common with <b>unequal</b> column widths, so that most of the space is reserved for the main content. The side content (if any) is often used as an alternative navigation or to specify information relevant to the main content. Change the widths as you like, only remember that it should add up to 100% in total:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown"> 
+                                .column 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp; 
+                                    float
+                                    <span tyle="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        left
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                                <br>
+                                <br>
+                                <span style="color:green">/* Left and right column */</span>
+                                <br>
+                                .column.side 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    width
+                                    <span tyle="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        25%
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                                <br>
+                                <br>
+                                <span style="color:green">/* Middle column */</span>
+                                <br>
+                                .column.middle 
+                                <span style="color:black">{</span>
+                                <span style="color:red">
+                                    <br>
+                                    &nbsp;
+                                    &nbsp;
+                                    width
+                                    <span tyle="color:mediumblue">
+                                        <span style="color:black">:</span> 
+                                        50%
+                                        <span style="color:black">;</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                                <br>
+                                <br>
+                                <span style="color:green">/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */</span>
+                                <br>
+                                @media screen and (max-width: 600px) 
+                                <span style="color:black">{</span>
+                                <span style="color:brown">
+                                    <br>
+                                    &nbsp; 
+                                    .column.side, .column.middle 
+                                    <span style="color:black">
+                                        <span style="color:black">{</span>
+                                    </span>
+                                    <span style="color:red">
+                                        <br>
+                                        &nbsp;
+                                        &nbsp;
+                                        &nbsp; 
+                                        width
+                                        <span tyle="color:mediumblue">
+                                            <span style="color:black">:</span> 
+                                            100%
+                                            <span style="color:black">;</span>
+                                        </span>
+                                        <br>
+                                        &nbsp; 
+                                    </span>
+                                    <span style="color:black">
+                                        <span style="color:black">}</span>
+                                    </span>
+                                    <br>
+                                </span>
+                                <span style="color:black">}</span>
+                            </span>
+                        </div>
+                        <br>
+                        <p>Result </p>
+                        <br>
+                        <img src="resources/images/Unequal Columns.png">
+                        <br>
+                        <hr style="height:3px; border-width:0; color: orange;background-color:orange">
+                        <br>
+                        <h4><b style="font-size: 25px; color:black">Footer</b></h4>
+                        <br>
+                        <p>The footer is placed at the bottom of your page. It often contains information like copyright and contact info:</p>
+                        <br>
+                        <p>Example: </p>
+                        <div class="w3-code notranslate cssHigh">
+                            <span style="color:brown"> 
+                            .footer 
+                            <span style="color:black">{</span>
+                            <span style="color:red">
+                                <br>
+                                &nbsp; 
+                                background-color
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    #F1F1F1
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                                &nbsp; 
+                                text-align
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    center
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                                &nbsp; 
+                                padding
+                                <span style="color:mediumblue">
+                                    <span style="color:black">:</span> 
+                                    10px
+                                    <span style="color:black">;</span>
+                                </span>
+                                <br>
+                            </span>
+                            <span style="color:black">}</span>
+                        </span>
+                        </div>
+                        <br>
+                        <p>Result: </p>
+                        <br>
+                        <img src="./resources/images/CSSFooter.png">
+                        <br> 
+                    </div>
+                </div>
+
+                <div id="Summary" class="tabcontent">
+                    <div class="info">
+                        <h4><b style="font-size: 25px; color:black">CSS Summary</b></h4>
+                        <br>
+                        <p>Without CSS, every web page would be drab plain text and images that flowed straight down the page. With CSS, you can add color and background images and change the layout of your page — your web pages can feel like works of art!</p>
+                        <br>
+                        <p>You will learn many aspects of styling web pages! You’ll be able to set up the correct file structure, edit text and colors, and create attractive layouts. With these skills, you’ll be able to customize the appearance of your web pages to suit your every need!</p>
+                        <br>
+                        <div>
+                            <video width="80%" height="300px" controls>
+                                <source src="What is CSS -  CSS Explained For Beginners - Web Development Tutorial - Edureka.mp4" type="video/mp4">
+                             </video>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="row">
+                <div class="col span-1-of-3 clearfix">
+                    <table width="100%">
+                        <tr valign="top">
+                            <td width="40%">
+                                <h4 style="color:#FFF">About Us</h4>
+                                <ul class="information">
+                                    <li><a >Our team</a></li>
+                        		<li><a >Funny classes</a></li>
+                        		<li><a >Team working</a></li>
+                        		<li><a >Practical projects</a></li>
+                                <li><a ">Terms</a></li>
+                                                           
+                    		</ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col span-1-of-3 clearfix">
+                <table width="100%">
+                    <tr valign="top">
+                        <td width="50%">
+                            <h4 style="color:#FFF">Other Courses</h4>
+                         <ul class="information">
+                             <li><a >SEO courses</a></li>
+                             <li><a >Network and Mobile data</a></li>
+                             <li><a >Deep Learning</a></li>
+                             <li><a >Blockchain</a></li>
+                             <li><a >Computer vision</a></li>
+                             </ul>
+                         </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col span-1-of-3 clearfix">
+                    <ul class="information">
+                        <li class="mycolor"><i class="fas fa-map-marker-alt small-icon"></i>Address: 1089 Oceanside Island, HN 8520102 </li>
+                    <li class="mycolor"><i class="fas fa-envelope small-icon"></i>Email: youroffice@youremail.com</li>
+                    <li class="mycolor"><i class="fas fa-phone-square small-icon"></i>Tel: +53 345 7953 3245</li>
+                    </ul>
+                    <ul class="social-icon">
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-reddit-alien"></i></a></li>
+                    </ul>
+                </div>          
+            </div>
+        </section>
+       
+        <footer>
+            <p>Copyright &copy; 2020 by Aab</p>
+        </footer>
+        <scrip src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></scrip>
+        <scrip src="vendor/js/jquery.waypoints.min.js"></scrip>
+        <scrip src="resources/js/scripts.js"></scrip>
+        
+    </body>
+</html>
